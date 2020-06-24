@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>What's New</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="../styles/whats-new.css">
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css'
+    integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <style>
+    body {
+      padding: 0px;
+      background-color: transparent;
+    }
+  </style>
+  <script type="text/javascript">
+    function whatsNewVersionHistory_onclick(control, event) {
+      if (parent && parent.whatsNewVersionHistory_onclick)
+        parent.whatsNewVersionHistory_onclick(control, event);
+    }
+    function whatsNewExit_onclick(control, event) {
+      if (parent && parent.whatsNewExit_onclick)
+        parent.whatsNewExit_onclick(control, event);
+    }
+    function whatsNewPrint_onclick(control, event) {
+      window.print();
+    }
+  </script>
+</head>
+
+<body>
+  <div class="whats-new print">
+    <div class="outer-container">
+      <!-- <div class="main-header">
+        <i class="fas fa-bullhorn"></i>
+        <div class="title">What's New</div>
+        <div class="tools">
+          <div class="version-history"><a href="index5.2.html" class="button">Version History</a></div>
+          <div class="exit-icon">
+            <i class="fa fa-times" aria-hidden="true"></i>
+          </div>
+        </div>
+      </div> -->
+      <div class="main-header no-print">
+        <i class="fas fa-bullhorn"></i>
+          <div class="title">What's New</div>
+          <div class="tools">
+            <div class="version-history"><a class="button" onclick="javascript: whatsNewVersionHistory_onclick(this, event);">Version History</a></div>
+              <div class="exit-icon" onclick="javascript: whatsNewExit_onclick(this, event);">
+                <i class="fa fa-times" aria-hidden="true"></i>
+              </div>
+          </div>
+      </div>
+      <div class="inner-wrapper">
+        <div type="" class="inner-container print">
+          <!-- <hr class="header-border"> -->
+          <div class="row-1">
+            <div class="summary">New features, enhancements and bug fixes.</div>
+            <div class="icons">
+              <div class="version">Version OAN 20-03.0.0</div>
+              <div class="action-icon no-print" data-toggle="tooltip" data-placement="top" data-trigger="hover" title="Print Version" onclick="javascript: whatsNewPrint_onclick(this, event);"><i class="fas fa-print"></i></div>
+            </div>
+          </div>
+
+          <div class="section-container">
+            <div class="section-title"><strong>People Work History – Add “Create People Record” Action</strong><span class="new-feature"><span class="new-feature-color">New Feature</span></span></div>
+            <div class="list">A new feature has been added to the People Record Work History screen to allow the creation of new People Records, based on information parsed from the Work History record. The action is located on the left menu, as shown:</div><img src="https://ain1storage.blob.core.windows.net/whatsnew/Create People Record.png" width="560" height="362" style="margin-left: 25px;">
+          </div>
+
+          <div class="section-container">
+            <div class="section-title-1"><strong>People Screen Required Fields Reduction</strong><span class="enhancement"><span class="enhancement-color">Enhancement</span></span></div>
+            <div class="list">Many OANet users have tried to create a People Record only to find they lacked sufficient information to fill all required fields. In order to allow users to quickly create People without requiring the inclusion of unnecessary details, the number of required fields needed to create a People Record has been reduced and a new dynamic system introduced that only requires additional fields for specific actions. By reducing the number of required fields, AEs now have more options for nurturing candidates.<br>For further information on the reduction of fields in the People Screen, please visit the Release Notes.</div>
+          </div>
+
+          <div class="section-container">
+            <div class="section-title"><strong>Save SMS to Activity Comments </strong><span class="enhancement"><span class="enhancement-color">Enhancement</span></span></div>
+            <div class="list">The functionality allowing users to save SMS messages to Activity Comments has been updated for ease of use. Users will now be able to access a given People Record when clicking on the respective name from within the SMS messenger; users will also have the ability to show/hide selection checkboxes, and can now identify messages already saved to Activity Comments by the presence of a highly visible checkmark next to the message timestamp.</div><img src="https://ain1storage.blob.core.windows.net/whatsnew/Saving SMS.png" width="560" height="265" style="margin-left: 25px;">
+          </div>
+
+          <div class="section-container">
+            <div class="section-title-1"><strong>Skip APPS Validation for Vendor Placements</strong><span class="enhancement"><span class="enhancement-color">Enhancement</span></span></div>
+            <div class="list">When creating a new Vendor Placement, users will no longer be require to submit APPS validation (as APPS data is not  collected for Vendor workers/ICs)</div>
+          </div>
+
+           <div class="section-container">
+            <div class="section-title"><strong>Delaware Sexual Harassment Prevention Training</strong><span class="enhancement"><span class="enhancement-color">Enhancement</span></span></div>
+            <div class="list">Per state mandated requirements, all staff that have a report-to state of Delaware will now be required to complete a one-hour sexual harassment prevention training course when they begin their assignment. Once they complete this training, they will not require training again for two years. When the temp completes the training, OANet will automatically upload the certificate of training completion to their people record.</div>
+          </div>
+
+          <div class="section-container">
+          <div class="section-title-1"><strong>Job to Fill Analysis (JFA) Report – “Zip Code Radius” Report Criterion Added</strong><span class="enhancement"><span
+                class="enhancement-color">Enhancement</span></span></div>
+          <div class="list">The ability to choose Zip Code Radius, based on the Client’s address, has been added to the JFA Report generation criteria. This will filter the report output to include only Job Orders which have Clients whose addresses fall within the specified Zip Code Radius. This new criterion can be found on the JFA Report Criteria screen as follows:</div><img src="https://ain1storage.blob.core.windows.net/whatsnew/Zip Code Radius.png" width="560" height="476" style="margin-left: 25px;">
+        </div>  
+
+         <div class="section-container">
+          <div class="section-title-1"><strong>Client Lookup – Fields Moved to Main Search</strong><span class="enhancement"><span
+                class="enhancement-color">Enhancement</span></span></div>
+          <div class="list">When performing a Client Lookup search, the following fields will now be available in the main search criteria (where they were previously only available when using the Advanced Search functionality):<br>
+          <ul>
+            <li>Name</li>
+            <li>Client ID</li>
+            <li>Corporate ID</li>
+            <li>Creation Date</li>
+          </ul>  
+          </div>
+        </div>  
+
+          <div class="section-container">
+          <div class="section-title-1"><strong>Job Order Recommendation – Prevent Duplicates</strong><span class="enhancement"><span
+                class="enhancement-color">Enhancement</span></span></div>
+          <div class="list">OANet will now automatically prevent the addition of duplicate candidates to Job Order Recommendation and will verify ensure Recommendations for a given Job Order are unique using candidate SSN and/or email address.</div>
+        </div>
+        
+         <div class="section-container">
+          <div class="section-title-1"><strong>Import Job Ad Response Without Physical Resume</strong><span class="enhancement"><span
+                class="enhancement-color">Enhancement</span></span></div>
+          <div class="list">When importing a Job Ad Response and a People Record for the respective candidate already exists, users might encounter a "no resume found" error if physical resume is missing. In these instances, OANet will no longer error but instead import resume from the resume text section of the existing People Record.</div>
+        </div>
+        
+        <div class="section-container">
+          <div class="section-title-1"><strong>Copying Records – Functionality Update</strong><span class="enhancement"><span class="enhancement-color">Enhancement</span></span></div>
+          <div class="list">While the ability to copy records has long been a feature of OANet, the functionality has been updated to clarify what items will be copied in the copy record being created. A number of previously ommitted record details are now included when copying Job Order and Placement records, including Job Description, Private Notes, Start Date, End Date, and Actual End Date. For copied People Records, Status will now be shown, and fields not being copied will be more clearly indicated. When copying Client records, users will now have the option to copy the Credit Screen as well. It is not possible to copy Leads People or Leads Client records</div>
+        </div>
+
+          <div class="section-container">
+            <div class="section-title"><strong>Activity Report – Limit Notes</strong><span class="enhancement"><span class="enhancement-color">Enhancement</span></span></div>
+            <div class="list">A checkbox has now been added to the Activity Report builder allowing users to limit notes to 1000 characters. This will limit the length of notes and Activity Comments in the report output to 1000 characters, as long notes occasionally make the process of building/reading reports highly cumbersome.</div>
+          </div>
+
+          <div class="section-container">
+            <div class="section-title"><strong>Employee Hour Report</strong><span class="enhancement"><span class="enhancement-color">Enhancement</span></span></div>
+            <div class="list">The People Hour Sheet Report and Client hour Sheet Report have received a number of updates – new columns have been added to show Pay Code, Bill amount, Non Bill Amount (beside other info). Users may now choose one or more pay codes from the screen, and have additionally been provided the option to display bill amount and non-bill amount.</div>
+          </div>
+
+          <div class="section-container">
+            <div class="section-title"><strong>Action Buttons at Top and Bottom of Pages</strong><span class="enhancement"><span class="enhancement-color">Enhancement</span></span>
+            </div>
+            <div class="list">Action buttons such as "Submit", "Continue", "Cancel", "Clear", etc. can now be found on the top right of relevant pages, in addition to their original location at the bottom center of the page. Buttons like "Submit", "Continue", "Save" now have a blue background and white type. Buttons like "Cancel", "Clear", "Delete" have a grey background and black type. The Refresh button is now an icon</div><img src="https://ain1storage.blob.core.windows.net/whatsnew/Button Placement.png" width="560" height="462" style="margin-left: 25px;">
+          </div>
+
+          <div class="section-container">
+            <div class="section-title"><strong>Alert Section – Blurry Text</strong><span class="bug-fix"><span class="bug-fix-color">Bug Fix</span></span></div>
+            <div class="list">Users were previously experiencing an issue with blurry text in the Alerts section. This issue has been addressed and the text should now appear clearly for all users, with a larger font size and contrasting background ensuring clarity. The alert icons have also been updated</div><img src="https://ain1storage.blob.core.windows.net/whatsnew/Alerts.png" width="560" height="179" style="margin-left: 25px;">
+          </div>
+
+          <div class="section-container">
+            <div class="section-title"><strong>People Management Report – Origination Source As Default People Source</strong><span class="bug-fix"><span class="bug-fix-color">Bug Fix</span></span></div>
+            <div class="list">In keeping with sales initiatives devised by the Talent Development department, the PMR will now run with People Source set to Origination Source by default – the report criterion previously defaulted to Recruiting Source
+            </div>
+          </div>
+
+          <div class="section-container">
+            <div class="section-title"><strong>Manual Time Card Entry – Pay Code Field</strong><span class="bug-fix"><span class="bug-fix-color">Bug Fix</span></span></div>
+            <div class="list">While manually entering Time Cards, long Pay Codes could be hard to read in their entirety due to the small size of the Pay Code field. This field has been expanded to allow users to read long Pay Codes</div><img src="https://ain1storage.blob.core.windows.net/whatsnew/Manual Timecode.png" width="560" height="113" style="margin-left: 25px;">
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
